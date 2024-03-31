@@ -6,7 +6,8 @@
     "calculate-area": "tsx ./calculate-area/index.ts",
     "subarray-product": "tsx ./subarray-product/index.ts",
     "max-subarray": "tsx ./max-subarray/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sub-array-fixed-bound": "tsx ./subarray-fixed-bound/index.ts",
+    "test": "tsx --test **/*.test.ts"
   },
   "author": "Sufiane Souissi <su.souissi@gmail.com>",
   "license": "ISC",
