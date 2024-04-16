@@ -1,5 +1,5 @@
 export function deckRevealedIncreasing(deck: number[]): number[] {
-    const sortedDeck = deck.sort((a, b) => b - a);
+    const sortedDeck = deck.sort((a, b) => b - a)
     const orderedDeck: number[] = []
     const indexes: number[] = []
 

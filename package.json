@@ -1,20 +1,22 @@
 {
-  "name": "coding-game",
-  "version": "1.0.0",
-  "main": "index.ts",
-  "scripts": {
-    "calculate-area": "tsx ./calculate-area/index.ts",
-    "subarray-product": "tsx ./subarray-product/index.ts",
-    "max-subarray": "tsx ./max-subarray/index.ts",
-    "sub-array-fixed-bound": "tsx ./subarray-fixed-bound/index.ts",
-    "test": "tsx --test **/*.test.ts"
-  },
-  "author": "Sufiane Souissi <su.souissi@gmail.com>",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@types/node": "20.11.19",
-    "tsx": "4.7.1",
-    "typescript": "5.3.3"
-  }
+    "name": "coding-game",
+    "version": "1.0.0",
+    "main": "index.ts",
+    "scripts": {
+        "calculate-area": "tsx ./calculate-area/index.ts",
+        "subarray-product": "tsx ./subarray-product/index.ts",
+        "max-subarray": "tsx ./max-subarray/index.ts",
+        "sub-array-fixed-bound": "tsx ./subarray-fixed-bound/index.ts",
+        "lint:fix": "prettier . --write",
+        "test": "tsx --test **/*.test.ts"
+    },
+    "author": "Sufiane Souissi <su.souissi@gmail.com>",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "@types/node": "20.11.19",
+        "prettier": "3.2.5",
+        "tsx": "4.7.1",
+        "typescript": "5.3.3"
+    }
 }

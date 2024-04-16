@@ -15,4 +15,4 @@ export function maxDepth(s: string): number {
     }
 
     return maxDepth
-};
+}

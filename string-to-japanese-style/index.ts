@@ -5,7 +5,7 @@ const splitArrayInChunks = (arrayToSplit, chunkSize = 1) => {
     const chunks = []
 
     for (let i = 0; i < arrayToSplit.length; i += chunkSize) {
-        const chunk = arrayToSplit.slice(i, i + chunkSize);
+        const chunk = arrayToSplit.slice(i, i + chunkSize)
         chunks.push(chunk)
     }
 
@@ -32,5 +32,7 @@ const transformToJapaneseStyle = (maxLetter, stringToTransform) => {
     return resultString
 }
 
-
-console.log('result:\n', transformToJapaneseStyle(maxLetterVertically, stringToTransform))
+console.log(
+    'result:\n',
+    transformToJapaneseStyle(maxLetterVertically, stringToTransform)
+)

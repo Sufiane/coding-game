@@ -6,7 +6,7 @@ const CloseOpenMapping = {
 
 export function isValid(s: string): boolean {
     if (s.length < 2) {
-        return false;
+        return false
     }
 
     const openChar: string[] = []
@@ -17,7 +17,7 @@ export function isValid(s: string): boolean {
             case '[':
             case '{':
                 openChar.push(s[i])
-                break;
+                break
             case ')':
             case ']':
             case '}': {

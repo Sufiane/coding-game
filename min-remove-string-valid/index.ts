@@ -32,8 +32,7 @@ export function minRemoveToMakeValid(s: string): string {
     }
 
     return characters.join('')
-};
-
+}
 
 // todo
 //  need to pair the parenthesis together and then delete the ones w/o pairs

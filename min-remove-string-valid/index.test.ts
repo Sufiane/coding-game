@@ -1,11 +1,14 @@
-import assert from 'node:assert';
-import { minRemoveToMakeValid } from './index';
-import { describe, it } from 'node:test';
+import assert from 'node:assert'
+import { minRemoveToMakeValid } from './index'
+import { describe, it } from 'node:test'
 
 describe('minRemoveToMakeValid', () => {
     describe('s = "lee(t(c)o)de)"', () => {
         it('should return "lee(t(c)o)de"', () => {
-            assert.strictEqual(minRemoveToMakeValid('lee(t(c)o)de)'), 'lee(t(c)o)de')
+            assert.strictEqual(
+                minRemoveToMakeValid('lee(t(c)o)de)'),
+                'lee(t(c)o)de'
+            )
         })
     })
 

@@ -2,10 +2,14 @@ const nums = [1, 1, 1, 1]
 const minK = 1
 const maxK = 1
 
-const isValidArray = (array: number[]) => array.includes(minK) && array.includes(maxK)
+const isValidArray = (array: number[]) =>
+    array.includes(minK) && array.includes(maxK)
 
-
-export function countSubArrays(nums: number[], minK: number, maxK: number): number {
+export function countSubArrays(
+    nums: number[],
+    minK: number,
+    maxK: number
+): number {
     let left = 0
     let right = 0
     let nbSubarray = 0
@@ -26,18 +30,12 @@ export function countSubArrays(nums: number[], minK: number, maxK: number): numb
         right++
     }
 
-
     return nbSubarray
 }
 
 console.log('result: ', countSubArrays(nums, minK, maxK))
 
-
-function workingSolution(
-    nums: number[],
-    minK: number,
-    maxK: number,
-): number {
+function workingSolution(nums: number[], minK: number, maxK: number): number {
     let left = 0
     let right = 0
     let res = 0
@@ -48,20 +46,24 @@ function workingSolution(
         const end = nums[right]
 
         if (end < minK || end > maxK) {
-            minPos = -1;
-            maxPos = -1;
-            left = right + 1;
+            minPos = -1
+            maxPos = -1
+            left = right + 1
         }
 
-        if (end === minK) { minPos = right }
-        if (end === maxK) { maxPos = right }
+        if (end === minK) {
+            minPos = right
+        }
+        if (end === maxK) {
+            maxPos = right
+        }
 
         if (minPos !== -1 && maxPos !== -1) {
-            res += (Math.min(minPos, maxPos) + 1 - left)
+            res += Math.min(minPos, maxPos) + 1 - left
         }
 
         right++
     }
 
     return res
-};
+}

@@ -1,6 +1,6 @@
-import assert from 'node:assert';
-import { describe, it } from 'node:test';
-import { maxProduct } from './index';
+import assert from 'node:assert'
+import { describe, it } from 'node:test'
+import { maxProduct } from './index'
 
 describe('max-product', () => {
     describe('nums = [3,4,5,2]', () => {

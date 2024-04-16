@@ -1,7 +1,7 @@
-import assert from 'node:assert';
-import { describe, it } from 'node:test';
+import assert from 'node:assert'
+import { describe, it } from 'node:test'
 
-import { shuffle } from './index';
+import { shuffle } from './index'
 
 describe('shuffle-array', () => {
     describe.skip('nums = [2,5,1,3,4,7], n = 3', () => {
@@ -12,7 +12,10 @@ describe('shuffle-array', () => {
 
     describe('nums = [1,2,3,4,4,3,2,1], n = 4', () => {
         it('should return [1,4,2,3,3,2,4,1]', () => {
-            assert.deepEqual(shuffle([1, 2, 3, 4, 4, 3, 2, 1], 4), [1, 4, 2, 3, 3, 2, 4, 1])
+            assert.deepEqual(
+                shuffle([1, 2, 3, 4, 4, 3, 2, 1], 4),
+                [1, 4, 2, 3, 3, 2, 4, 1]
+            )
         })
     })
 

@@ -19,7 +19,6 @@ export function numSubarrayProductLessThanK(nums: number[], k: number): number {
             start++
         }
 
-
         result += end - start + 1
         end++
     }
@@ -54,4 +53,10 @@ function numSubarrayProductLessThanKDumber(nums: number[], k: number): number {
     return result
 }
 
-console.log('result Dumber: ', numSubarrayProductLessThanKDumber([10, 9, 10, 4, 3, 8, 3, 3, 6, 2, 10, 10, 9, 3], 19))
+console.log(
+    'result Dumber: ',
+    numSubarrayProductLessThanKDumber(
+        [10, 9, 10, 4, 3, 8, 3, 3, 6, 2, 10, 10, 9, 3],
+        19
+    )
+)

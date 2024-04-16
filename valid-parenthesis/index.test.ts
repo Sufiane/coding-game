@@ -1,7 +1,7 @@
-import assert from 'node:assert';
-import { describe, it } from 'node:test';
+import assert from 'node:assert'
+import { describe, it } from 'node:test'
 
-import { isValid } from './index';
+import { isValid } from './index'
 
 describe('isValid()', () => {
     describe('s = "()"', () => {

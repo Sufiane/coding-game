@@ -1,5 +1,5 @@
 export function checkValidString(s: string): boolean {
-    const characters = s.split('');
+    const characters = s.split('')
 
     let openStack: number[] = []
     let wildCardStack: number[] = []
@@ -12,7 +12,6 @@ export function checkValidString(s: string): boolean {
     for (let i = 0; i < characters.length; i++) {
         if (characters[i] === '(') {
             openStack.push(i)
-
         } else if (characters[i] === ')') {
             if (openStack.length > 0) {
                 openStack.pop()
@@ -44,4 +43,4 @@ export function checkValidString(s: string): boolean {
     }
 
     return true
-};
+}

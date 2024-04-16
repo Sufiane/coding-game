@@ -5,13 +5,14 @@ enum SymbolMap {
     L = 50,
     C = 100,
     D = 500,
-    M = 1000
+    M = 1000,
 }
 
 export function romanToInt(s: string): number {
     return s.split('').reduce((acc, letter, currentIndex) => {
         const currentValue = SymbolMap[letter as keyof typeof SymbolMap]
-        const nextValue = SymbolMap[s[currentIndex + 1] as keyof typeof SymbolMap]
+        const nextValue =
+            SymbolMap[s[currentIndex + 1] as keyof typeof SymbolMap]
 
         if (currentValue < nextValue) {
             acc -= SymbolMap[letter as keyof typeof SymbolMap]
@@ -21,4 +22,4 @@ export function romanToInt(s: string): number {
 
         return acc
     }, 0)
-};
+}

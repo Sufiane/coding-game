@@ -1,7 +1,7 @@
-import { describe, it } from 'node:test';
-import assert from 'node:assert';
+import { describe, it } from 'node:test'
+import assert from 'node:assert'
 
-import { isPalindrome } from './index';
+import { isPalindrome } from './index'
 
 describe('isPalindrome-number', () => {
     describe('121', () => {

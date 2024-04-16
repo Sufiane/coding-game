@@ -6,4 +6,4 @@ export function lengthOfLastWord(s: string): number {
     }
 
     return words.at(-1)!.length
-};
+}

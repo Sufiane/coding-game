@@ -1,6 +1,6 @@
-import { describe, it } from 'node:test';
-import assert from 'node:assert';
-import { removeKdigits } from './index';
+import { describe, it } from 'node:test'
+import assert from 'node:assert'
+import { removeKdigits } from './index'
 
 describe('RemoveKDigits', () => {
     describe('num = "1432219", k = 3', () => {

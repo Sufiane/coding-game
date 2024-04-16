@@ -1,5 +1,5 @@
 export function twoSum(nums: number[], target: number): number[] {
-    for(let i = 0; i < nums.length; i++) {
+    for (let i = 0; i < nums.length; i++) {
         for (let j = i + 1; j < nums.length; j++) {
             if (nums[i] + nums[j] === target) {
                 return [i, j]
@@ -8,7 +8,7 @@ export function twoSum(nums: number[], target: number): number[] {
     }
 
     return []
-};
+}
 
 export function twoSumFaster(nums: number[], target: number): number[] {
     const diffIndexes: Record<number, number> = {}
@@ -24,4 +24,4 @@ export function twoSumFaster(nums: number[], target: number): number[] {
     }
 
     return []
-};
+}

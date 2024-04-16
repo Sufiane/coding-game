@@ -1,6 +1,6 @@
-import assert from 'node:assert';
-import { describe, it } from 'node:test';
-import { romanToInt } from './index';
+import assert from 'node:assert'
+import { describe, it } from 'node:test'
+import { romanToInt } from './index'
 
 describe('roman to integer', () => {
     describe('III', () => {

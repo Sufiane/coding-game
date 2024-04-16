@@ -1,4 +1,5 @@
-const lint = 'https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/description/'
+const lint =
+    'https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/description/'
 
 //const array = [1, 2, 3, 1, 2, 3, 1, 2]
 //const maxOccurrence = 2
