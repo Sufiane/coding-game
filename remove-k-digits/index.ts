@@ -1,13 +1,30 @@
 export function removeKdigits(num: string, k: number): string {
-    if (k === num.length) {
-        return '0'
+    const stack: string[] = []
+    let rem = 0;
+
+    for (const n of num) {
+        while (stack.length && n < stack.at(-1) && rem < k) {
+            stack.pop();
+            rem++;
+        }
+
+        stack.push(n);
     }
 
-    const numbers = num.split('').map((char, index, array) => {
-        return Number(array.toSpliced(index, k).join(''))
-    })
+    while (rem < k) {
+        stack.pop();
+        rem++;
+    }
 
-    numbers.sort((a, b) => a - b)
+    removeLeadingZeros(stack)
 
-    return numbers[0].toString()
+    return stack.join('') || '0';
 };
+
+function removeLeadingZeros(stack: string[]): string[] {
+    while (stack[0] === '0') {
+        stack.shift()
+    }
+
+    return stack
+}
