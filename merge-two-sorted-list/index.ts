@@ -15,21 +15,17 @@ export function mergeTwoLists(
     list1: ListNode | null,
     list2: ListNode | null
 ): ListNode | null {
-    if (list1 !== null) {
-        if (list2 !== null) {
-            if (list1.val < list2.val) {
-                return new ListNode(list1.val, mergeTwoLists(list1.next, list2))
-            } else {
-                return new ListNode(list2.val, mergeTwoLists(list1, list2.next))
-            }
-        } else {
-            return new ListNode(list1.val, mergeTwoLists(list1.next, null))
-        }
+    if (list1 === null) {
+        return list2
+    }
+
+    if (list2 === null) {
+        return list1
+    }
+
+    if (list1.val < list2.val) {
+        return new ListNode(list1.val, mergeTwoLists(list1.next, list2))
     } else {
-        if (list2 !== null) {
-            return new ListNode(list2.val, mergeTwoLists(list2.next, null))
-        } else {
-            return null
-        }
+        return new ListNode(list2.val, mergeTwoLists(list1, list2.next))
     }
 }
